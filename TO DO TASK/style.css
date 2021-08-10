@@ -1,0 +1,516 @@
+body {
+    background: pink;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    padding: px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    border: 1px solid purple;
+    color: white;
+    text-shadow: 0 0 2px purple;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+#navbar-brand {
+    font-style: oblique;
+}
+
+.completed {
+    text-decoration: line-through black;
+    text-decoration-thickness: 2px;
+    filter: blur(0.9px);
+}
+
+input[type=search] {
+    text-align: left;
+    float: right;
+    cursor: pointer;
+    display: block;
+    width: 20%;
+    height: 8%;
+    padding: 10px 30px;
+    margin: 87px 100px;
+    letter-spacing: 4px;
+    text-shadow: 0 0 2px purple;
+    word-spacing: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    text-shadow: 0 0 2px purple;
+    width: 200%;
+    height: 90%;
+    left: 200%;
+    top: 20%;
+    padding: 20px 1px;
+    font-size: 23px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    text-shadow: 0 0 2px purple;
+    width: 200%;
+    height: 90%;
+    left: 200%;
+    top: 20%;
+    padding: 20px 1px;
+    font-size: 23px;
+}
+
+.form-control {
+    text-align: center;
+    cursor: pointer;
+    display: grid;
+    text-shadow: 0 0 2px purple;
+    width: 50%;
+    padding: 10px 2px;
+    margin: 1px 90px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#addtaskbtn {
+    position: absolute;
+    top: 29%;
+    left: 10.5%;
+    padding: 11px;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    border: 1px solid purple;
+    z-index: 10;
+    transition: 0.2s;
+    cursor: pointer;
+    text-shadow: 0 0 2px purple;
+    color: black;
+    box-shadow: 0px 1px 5px 2px #BFCEEF;
+    border-radius: 10px;
+}
+
+#deleteallbtn,
+#addtaskbtn,
+#savetaskbtn,
+.btn6,
+.btn7,
+.btn9 {
+    position: absolute;
+    top: 75%;
+    left: 29.5%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    color: black;
+    text-shadow: 0 0 2px purple;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #808080;
+    padding: 10px 13px;
+    box-shadow: 0px 1px 5px 2px #BFCEEF;
+}
+
+#savetaskbtn {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+}
+
+#addtaskbtn {
+    position: absolute;
+    top: 29%;
+    left: 10.5%;
+}
+
+.btn9 {
+    position: absolute;
+    top: 74%;
+    left: 38.5%;
+    padding: 7px;
+}
+
+.btn7 {
+    position: absolute;
+    top: 75%;
+    left: 53.5%;
+    display: block;
+}
+
+button {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    z-index: 10;
+    transition: 0.2s;
+    cursor: pointer;
+    text-shadow: 0 0 2px purple;
+    color: black;
+    padding: 11px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    color: black;
+    text-shadow: 0 0 2px purple;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #808080;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    width: 90%;
+    height: 10%;
+    font-size: 19px;
+}
+
+table tr td {
+    background-color: white;
+    cursor: pointer;
+    text-align: justify;
+    font-size: 20px;
+    border-radius: 2px;
+}
+
+.to-do-output {
+    background-color: none;
+    width: 100%;
+    height: 350px;
+    overflow-y: auto;
+    align-items: center;
+}
+
+table {
+    padding: 10px 80px;
+}
+
+td {
+    padding: 10px 10px;
+    color: black;
+    text-shadow: 0 0 1px purple;
+}
+
+.btn1 {
+    font-size: 20px;
+}
+
+.notdone,
+.deleteall,
+.edit,
+.delete,
+.done,
+.notify {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    padding: 10px 1px;
+    min-width: 250px;
+    position: absolute;
+    color: black;
+    right: 4px;
+    top: 70px;
+    border-radius: 2px;
+    box-shadow: 0px 1px 5px 2px purple;
+    border-left: 7px solid black;
+}
+
+.notify .show {
+    animation: show_slide 1s ease forwards;
+}
+
+.deleteall .show {
+    animation: show_slide 1s ease forwards;
+}
+
+.notdone.show {
+    animation: show_slide 1s ease forwards;
+}
+
+.done .show {
+    animation: show_slide 1s ease forwards;
+}
+
+.edit .show {
+    animation: show_slide 1s ease forwards;
+}
+
+.delete .show {
+    animation: show_slide 1s ease forwards;
+}
+
+@keyframes show_slide {
+    0% {
+        transform: translateX(100%);
+    }
+    40% {
+        transform: translateX(-10%);
+    }
+    80% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+.notify.hide {
+    display: none;
+}
+
+.deleteall.hide {
+    display: none;
+}
+
+.edit.hide {
+    display: none;
+}
+
+.done.hide {
+    display: none;
+}
+
+.delete.hide {
+    display: none;
+}
+
+.notdone.hide {
+    display: none;
+}
+
+.notify .msg {
+    font-size: 15px;
+}
+
+.delete .msg {
+    font-size: 15px;
+}
+
+.deleteall .msg {
+    font-size: 15px;
+}
+
+.edit .msg {
+    font-size: 15px;
+}
+
+.done .msg {
+    font-size: 15px;
+}
+
+.notdone .msg {
+    font-size: 15px;
+}
+
+.deleteall .fa-times {
+    position: absolute;
+    left: 220px;
+    top: 2%;
+    transform: translate(-10%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    padding: 13px;
+    font-size: 10px;
+    text-align: left;
+}
+
+#deleteallbtn {
+    position: absolute;
+    top: 25.5%;
+    left: 15.5%;
+}
+
+.notify .fa-times {
+    position: absolute;
+    left: 220px;
+    top: 2%;
+    transform: translate(-10%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    padding: 12px;
+    font-size: 10px;
+    text-align: left;
+}
+
+.delete .fa-times {
+    position: absolute;
+    left: 230px;
+    bottom: 1%;
+    transform: translate(-10%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    padding: 13.5px;
+    font-size: 10px;
+    text-align: left;
+}
+
+.notdone .fa-times {
+    position: absolute;
+    left: 220px;
+    top: 2%;
+    transform: translate(-10%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    padding: 13px;
+    font-size: 10px;
+    text-align: left;
+}
+
+.done .fa-times {
+    position: absolute;
+    left: 220px;
+    top: 1%;
+    transform: translate(-10%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    padding: 13px;
+    font-size: 10px;
+    text-align: left;
+}
+
+.edit .fa-times {
+    position: absolute;
+    left: 220px;
+    top: 2%;
+    transform: translate(-10%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    padding: 12px;
+    font-size: 10px;
+    text-align: left;
+}
+
+.pop2,
+.pop1,
+.popup,
+.popup_box {
+    width: 400px;
+    background: linear-gradient(to bottom, pink, white);
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #b3b3b3;
+    box-shadow: 0px 0px 3px purple;
+    z-index: 9999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.pop2,
+.pop1,
+.popup {
+    display: none;
+}
+
+.popup_box {
+    display: none;
+}
+
+.popup i,
+.popup_box i {
+    font-size: 30px;
+    color: red;
+    border: 2px solid red;
+    padding: 20px 30px;
+    border-radius: 50%;
+    margin: -10px 0 20px 0;
+    box-shadow: 50px solid#e60000;
+}
+
+.popup h1,
+.popup_box h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #1b2631;
+    margin-bottom: 5px;
+}
+
+.popup label,
+.popup_box label {
+    font-size: 23px;
+    color: #e60e0e;
+    text-align: center;
+}
+
+.popup .btns,
+.popup_box .btns {
+    margin: 40px 0 0 0;
+}
+
+.btns .btn1,
+.btns .btn2,
+.btns .btn3,
+.btns .btn4 {
+    background: linear-gradient(to bottom, rgb(247, 4, 44), #808080);
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #808080;
+    padding: 10px 13px;
+}
+
+.btns .btn4,
+.btns .btn2 {
+    margin-left: 20px;
+    background: linear-gradient(to bottom, #808080, rgb(247, 4, 44));
+    border: 1px solid #cc0000;
+}
+
+.btns .btn3:hover,
+.btns .btn1:hover {
+    transition: .5s;
+    background: #8c8c8c;
+}
+
+.btns .btn2:hover,
+.btns .btn4:hover {
+    transition: .5s;
+    background: #e60000;
+}
+
+#vl1:hover {
+    transition: .5s;
+    background: green;
+}
+
+.text-success:hover {
+    transition: .5s;
+    background: blue;
+}
+
+#vl3:hover {
+    transition: .5s;
+    background: red;
+}
+
+@media only screen and (max-width: 800px) {
+    header {
+        background-color: gray;
+    }
+    body {
+        background: rgb(196, 13, 196);
+    }
+}
+
+@media screen and (max-width:800px) {
+    div.container {
+        font-size: 20px;
+    }
+    input[type=search] {
+        width: 40%;
+        height: 20%;
+        padding: 15px 14px;
+    }
+    #deleteallbtn {
+        left: 93px;
+        top: 27.5%;
+        padding: 3px 4px;
+    }
+    #addtaskbtn {
+        left: 46px;
+        top: 30%;
+        padding: 3px 4px;
+    }
+    table {
+        padding: 10% 2%;
+    }
+}
