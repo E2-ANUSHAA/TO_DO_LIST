@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+        &nbsp; &nbsp; &nbsp;
+        <title> Todo List</title>
+    </head>
+    <body>
+       <header><div class="container">
+        <strong> Todo List</strong>        
+        </div>
+   <div>   
+    </header>
+        <div class="readme">
+            <strong> Tap &nbsp; <i class="fa fa-plus" style="font-size:25px;color:palegreen"></i>
+                &nbsp;  to add task</strong>        
+
+        </div>
+        <div class="todo">
+           
+            <div class="to-do-output"> 
+                <table  id="addedtasklist">
+
+                </table>
+            </div>
+        </div>
+        
+        <button type="button" class="btn7" id="addtaskbtn">              
+        <i class="fa fa-plus" style="font-size:29px;color:palegreen"></i>
+        
+        </button>
+       </div> 
+       <div>
+        <button type="button" id="deleteallbtn" >  <i class="fa fa-trash"  style="font-size:18px;color:red"></i>
+
+             &nbsp; Delete All </button>
+       </div>
+       <div>
+        <form class="form-inline">
+            <input class="form-control " type="search" placeholder="Search.." aria-label="Search" id="searchtextbox" />
+        </form>
+       </div>
+
+       <div class="notify hide" id="notify">
+        <span style='font-size:15px' class='far'>&#xf058;</span>
+        <strong>   <span class="msg">Successfully Task is added</span></strong>
+        <div class="close" id="close"> <span class="fas fa-times"></span></div>
+    </div>
+    <div class="edit hide" id="edit">
+        <span style='font-size:15px' class='far'>&#xf058;</span>
+        <strong>   <span class="msg">Successfully Task is edited</span></strong>
+        <div class="close" id="close"> <span class="fas fa-times"></span></div>
+    </div>
+    <div class="done hide" id="done">
+        <span style='font-size:15px' class='far'>&#xf058;</span>
+        <strong>    <span class="msg">Successfully Completed</span></strong>
+        <div class="close" id="close"> <span class="fas fa-times"></span></div>
+    </div>
+    <div class="notdone hide" id="notdone">
+        <span style='font-size:15px'></span>
+        <strong>    <span class="msg"><i class="fa fa-exclamation-circle"></i> Task Get InCompleted</span></strong>
+        <div class="close" id="close"> <span class="fas fa-times"></span></div>
+    </div>
+    <div class="delete hide" id="delete">
+        <strong> <span class="msg"><i class="fa fa-exclamation-circle"></i> Successfully Task is deleted</span></strong>
+        <div class="close"> <span class="fas fa-times"></span></div>
+    </div>
+    <div class="deleteall hide" id="deleteall">
+        <strong> <span class="msg"><i class="fa fa-exclamation-circle"></i>Your TODO Get deleted</span></strong>
+        <div class="close"> <span class="fas fa-times"></span></div>
+    </div>
+
+    <div class="popup_box" id="popup_box">
+   <br>
+        <i class="fas fa-exclamation"></i>
+        <h1>Your are deleting All Task Permanently !</h1>
+        <label>Are you sure to proceed?</label>
+        <div class="btns">
+            <button class="btn1" id="btn1">Cancel</button>
+            <button class="btn2" id="btn2">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup" id="popup"><br>
+        <i class="fas fa-exclamation"></i>
+        <h1>Your Task will delete Permanently!</h1>
+        <label>Are you sure to proceed?</label>
+        <div class="btns">
+            <button class="btn3" id="btn3">Cancel</button>
+            <button class="btn4" id="btn4">Delete</button>
+        </div>
+    </div>
+
+    <div class="pop1" id="pop1">
+        <i class="fa fa-spinner fa-spin" style="font-size:50px"></i>
+        <div class="col-8 mr-sm-2">
+            <input type="text" class="form-control" placeholder="Add your new todo" id="addtaskinput" onclick="pop1" />
+            <input type="hidden" id="saveindex">
+
+        </div>
+        <br><br><br><br> <br><br><br><br>
+
+        <div class="btns">
+            <button type="button" class="btn6" id="addtaskbtn2">              
+                Cancel
+            </button>
+            <button type="button" class="btn7" id="addtaskbtn1">              
+                Add
+            </button>
+            <button type="button" class="btn btn-success mr-sm-2" id="savetaskbtn">
+                Save Task
+            </button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+
+    </body>
+
+</html>

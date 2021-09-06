@@ -1,0 +1,452 @@
+.todo
+{
+    position: absolute;
+    width: 50%;
+    top: 18%;
+    left: 23%;
+    padding: 170px 20px;
+    border: 12px solid white;
+    background: pink;
+    border-radius: 10px;
+height: 120px;
+
+}
+
+header {
+  padding: 10px;
+  text-align: center;
+  background: gray;
+  color: white;
+  text-shadow: 0 0 7px pink;
+  font-size: 34px;
+  border-color: black;
+  border-radius: 10px;
+}
+body{
+    background-color:gray;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#addtaskbtn {
+  position: absolute;
+  top: 20%;
+  left: 24%;
+  padding: 15px;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 5px solid white;
+  z-index: 10;
+  transition: 0.2s;
+  cursor: pointer;
+  text-shadow: 0 0 2px purple;
+  color: black;
+  border-radius: 35px;
+}
+#deleteallbtn{
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  padding: 9px;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 5px solid white;
+  z-index: 10;
+  transition: 0.2s;
+  cursor: pointer;
+  text-shadow: 0 0 2px purple;
+  color: black;
+  border-radius: 25px;
+}
+.readme{
+  position: absolute;
+  top: 93%;
+  left: 42%;
+  color:white;
+  font-size: 25px;
+}
+.form-control {
+  text-align: left;
+  border: 5px solid white;
+  cursor: pointer;
+  display: grid;
+  text-shadow: 0 0 2px purple;
+  width: 20%;
+  position: absolute;
+  top: 28%;
+  left: 55%;
+  padding: 9px;
+  border-radius: 10px;
+}
+#addtaskinput{
+  position: absolute;
+  top:40%;
+  left: 17%;
+  width:60% ;
+}
+
+
+table tr td {
+  background-color: white;
+  cursor: pointer;
+  text-align: justify;
+  font-size: 18px;
+  border-radius: 2px;
+  width: 64%;
+height: 230%;
+
+}
+
+.to-do-output {
+
+width: 100%;
+height: 230%;
+  overflow-y: auto;
+}
+
+button {
+  background: pink;
+  border: 5px solid pink ;
+  border-radius: 2px;
+  border-radius: 10px;
+  color: gray;
+  font-size: 15px;
+  text-shadow: 0 0 1px purple;
+
+
+}
+
+.btn6,
+.btn7 {
+    position: absolute;
+    top: 75%;
+    left: 29.5%;
+    color: black;
+    text-shadow: 0 0 2px purple;
+    font-size: 18px;
+    padding: 10px 13px;
+    border: 2px solid white;
+    background: white;
+    border-radius: 35px;
+
+}
+
+#savetaskbtn {
+  position: absolute;
+  top: 70%;
+  left: 35%;
+  color: black;
+  text-shadow: 0 0 2px purple;
+  font-size: 18px;
+  padding: 10px 13px;
+  border: 2px solid white;
+  background: white;
+  border-radius: 35px;
+
+}
+.btn7 {
+  position: absolute;
+  top: 75%;
+  left: 53.5%;
+  display: block;
+}
+td {
+  padding: 5px 10px;
+  border: 2px solid white;
+  color: black;
+  text-shadow: 0 0 1px purple;
+}
+.completed {
+  text-decoration: line-through rgb(179, 176, 176);
+  text-decoration-thickness: 3px;
+  
+}
+.btn1 {
+  font-size: 20px;
+}
+
+.notdone,
+.deleteall,
+.edit,
+.delete,
+.done,
+.notify {
+  background: pink;
+  padding: 10px 1px;
+  min-width: 250px;
+  position: absolute;
+  color: black;
+  right: 4px;
+  top: 70px;
+  border-radius: 2px;
+  box-shadow: 0px 1px 5px 2px purple;
+  border-left: 7px solid black;
+}
+
+.notify .show {
+  animation: show_slide 1s ease forwards;
+}
+
+.deleteall .show {
+  animation: show_slide 1s ease forwards;
+}
+
+.notdone.show {
+  animation: show_slide 1s ease forwards;
+}
+
+.done .show {
+  animation: show_slide 1s ease forwards;
+}
+
+.edit .show {
+  animation: show_slide 1s ease forwards;
+}
+
+.delete .show {
+  animation: show_slide 1s ease forwards;
+}
+
+@keyframes show_slide {
+  0% {
+      transform: translateX(100%);
+  }
+  40% {
+      transform: translateX(-10%);
+  }
+  80% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-10px);
+  }
+}
+
+.notify.hide {
+  display: none;
+}
+
+.deleteall.hide {
+  display: none;
+}
+
+.edit.hide {
+  display: none;
+}
+
+.done.hide {
+  display: none;
+}
+
+.delete.hide {
+  display: none;
+}
+
+.notdone.hide {
+  display: none;
+}
+
+.notify .msg {
+  font-size: 15px;
+}
+
+.delete .msg {
+  font-size: 15px;
+}
+
+.deleteall .msg {
+  font-size: 15px;
+}
+
+.edit .msg {
+  font-size: 15px;
+}
+
+.done .msg {
+  font-size: 15px;
+}
+
+.notdone .msg {
+  font-size: 15px;
+}
+
+.deleteall .fa-times {
+  position: absolute;
+  left: 220px;
+  top: 2%;
+  transform: translate(-10%);
+  background: pink;  padding: 13px;
+  font-size: 10px;
+  text-align: left;
+}
+
+
+.notify .fa-times {
+  position: absolute;
+  left: 220px;
+  top: 2%;
+  transform: translate(-10%);
+  background: pink;  padding: 12px;
+  font-size: 10px;
+  text-align: left;
+}
+
+.delete .fa-times {
+  position: absolute;
+  left: 230px;
+  bottom: 1%;
+  transform: translate(-10%);
+  background: pink;  padding: 13.5px;
+  font-size: 10px;
+  text-align: left;
+}
+
+.notdone .fa-times {
+  position: absolute;
+  left: 220px;
+  top: 2%;
+  transform: translate(-10%);
+  background: pink;  padding: 13px;
+  font-size: 10px;
+  text-align: left;
+}
+
+.done .fa-times {
+  position: absolute;
+  left: 220px;
+  top: 1%;
+  transform: translate(-10%);
+  background: pink;  padding: 13px;
+  font-size: 10px;
+  text-align: left;
+}
+
+.edit .fa-times {
+  position: absolute;
+  left: 220px;
+  top: 2%;
+  transform: translate(-10%);
+  background: pink;  padding: 12px;
+  font-size: 10px;
+  text-align: left;
+}
+
+.pop2,
+.pop1,
+.popup,
+.popup_box {
+  width: 380px;
+  background: pink;
+  text-align: center;
+  align-items: center;
+  padding: 5px ;
+  color: white;
+  border: 12px solid white;
+  box-shadow: 0px 0px 3px purple;
+  z-index: 9999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+.pop2,
+.pop1,
+.popup {
+  display: none;
+}
+
+.popup_box {
+  display: none;
+}
+
+.popup i,
+.popup_box i {
+  font-size: 30px;
+  color: red;
+  border: 2px solid red;
+  padding: 20px 30px;
+  border-radius: 50%;
+  margin: -10px 0 20px 0;
+  box-shadow: 50px solid#e60000;
+}
+
+.popup h1,
+.popup_box h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #1b2631;
+  margin-bottom: 5px;
+}
+
+.popup label,
+.popup_box label {
+  font-size: 23px;
+  color: #e60e0e;
+  text-align: center;
+}
+
+.popup .btns,
+.popup_box .btns {
+  margin: 40px 0 0 0;
+}
+
+.btns .btn1,
+.btns .btn2,
+.btns .btn3,
+.btns .btn4 {
+  background: linear-gradient(to bottom, rgb(247, 4, 44), #808080);
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #808080;
+  padding: 10px 13px;
+  
+}
+
+.btns .btn4,
+.btns .btn2 {
+  margin-left: 20px;
+  background: linear-gradient(to bottom, #808080, rgb(247, 4, 44));
+  border: 1px solid #cc0000;
+}
+
+.btns .btn3:hover,
+.btns .btn1:hover {
+  transition: .5s;
+  background: #8c8c8c;
+}
+
+.btns .btn2:hover,
+.btns .btn4:hover {
+  transition: .5s;
+  background: #e60000;
+}
+@media only screen and (max-width: 400px) {
+  header {
+      background-color: gray;
+  }
+  body {
+      background: rgb(207, 197, 207);
+  }
+}
+
+@media screen and (max-width:450px) {
+  div.container {
+      font-size: 20px;
+  }
+  .todo
+  {
+      position: absolute;
+      width: 100%;
+      top: 18%;
+      left: 23%;
+      padding: 170px 20px;
+      border: 12px solid white;
+      background: pink;
+      border-radius: 10px;
+  height: 120px;
+  
+  }
+}
